@@ -1,0 +1,51 @@
+{
+	"model": {
+		"type": "minecraft:range_dispatch",
+		"property": "minecraft:custom_model_data",
+		"entries": [
+			{
+				"threshold": 0,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:man10/artifact/default/pear"
+				}
+			},
+			{
+				"threshold": 1,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:man10/artifact/default/oval"
+				}
+			},
+			{
+				"threshold": 2,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:man10/artifact/default/lozenge"
+				}
+			},
+			{
+				"threshold": 3,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:man10/artifact/default/clover"
+				}
+			},
+			{
+				"threshold": 4,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:man10/artifact/default/cushion"
+				}
+			},
+			{
+				"threshold": 5,
+				"model": {
+					"type": "minecraft:model",
+					"model": "minecraft:man10/artifact/default/crescent"
+				}
+			}
+		]
+	},
+	"oversized_in_gui": false
+}
