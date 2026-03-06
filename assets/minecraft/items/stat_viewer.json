@@ -1,0 +1,32 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:display_context",
+    "cases": [
+      {
+        "when": [
+          "gui",
+          "ground",
+          "fixed",
+          "firstperson_righthand",
+          "thirdperson_righthand",
+          "firstperson_lefthand",
+          "thirdperson_lefthand"
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/writable_book"
+        }
+      },
+      {
+        "when": "head"
+        ,
+        "model": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/air"
+        }
+      }
+    ]
+  },
+  "hand_animation_on_swap": false
+}
