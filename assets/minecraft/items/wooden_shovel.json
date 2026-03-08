@@ -2,6 +2,7 @@
 	"model": {
 		"type": "minecraft:range_dispatch",
 		"property": "minecraft:custom_model_data",
+		"index": 0,
 		"entries": [
 			{
 				"threshold": 0,
@@ -44,8 +45,42 @@
 					"type": "minecraft:model",
 					"model": "minecraft:man10/artifact/default/crescent"
 				}
+			},
+			{
+				"threshold": 6,
+				"model": {
+					"type": "minecraft:select",
+					"property": "minecraft:display_context",
+					"cases": [
+						{
+							"when": "head",
+							"model": {
+								"type": "minecraft:model",
+								"model": "minecraft:block/air"
+							}
+						},
+						{
+							"when": [
+								"gui",
+								"firstperson_righthand",
+								"firstperson_lefthand",
+								"thirdperson_righthand",
+								"thirdperson_lefthand",
+								"ground",
+								"fixed"
+							],
+							"model": {
+								"type": "minecraft:model",
+								"model": "minecraft:item/writable_book"
+							}
+						}
+					]
+				}
 			}
-		]
-	},
-	"oversized_in_gui": false
+		],
+		"fallback": {
+			"type": "minecraft:model",
+			"model": "minecraft:item/wooden_shovel"
+		}
+	}
 }
